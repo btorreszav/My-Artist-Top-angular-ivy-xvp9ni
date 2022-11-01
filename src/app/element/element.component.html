@@ -1,0 +1,25 @@
+<div class="row elem-container">
+  <div class="col-md-6">
+    <img class="artist-img" src="{{ content.img }}" />
+    <br />
+    {{ content.title }}
+    <br />
+    <div class="desc">{{ content.content }}</div>
+    <br />
+    <input type="text" placeholder="Buscar Canción" [(ngModel)]="property" />
+  </div>
+  <div class="col-md-6">
+    <table class="songs-table" border="1">
+      <thead>
+        <th>Canción</th>
+        <th>Foto</th>
+      </thead>
+      <tr *ngFor="let song of content.songs">
+        <td>{{ song.name }}</td>
+        <td *ngIf="song.link != ''">
+          <img [ngStyle]="{ width: '10vw' }" src="{{ song.link }}" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

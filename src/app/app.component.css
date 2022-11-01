@@ -1,0 +1,49 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.elem-container,
+.menu-btns {
+  text-align: center;
+}
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.search-btn {
+  padding: 5px 20px;
+}
+.artist-img {
+  max-height: 25vh;
+}
+.desc {
+  width: 75%;
+  margin: auto;
+}
+.songs-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+}
+.songs-table td,
+.songs-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.songs-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.songs-table th {
+  background-color: #04aa6d;
+  color: white;
+}
